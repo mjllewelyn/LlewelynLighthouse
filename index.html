@@ -14,7 +14,7 @@
   <script>
     const baseURL = "https://script.google.com/macros/s/AKfycbyl4r5jGWDu2oWRs2skdo2owtFnjbRLOBqiogRLXH7e0Vi2jUlUuWrn4ROTfhVFWnnv/exec"
     const queryString = window.location.search;
-    const updatedQuery = url.replace(/\?(\d+)/, "?page=post&id=$1");
+    const updatedQuery = queryString.replace(/\?(\d+)/, "?page=post&id=$1");
     document.getElementById("iframe-content").src = baseURL + updatedQuery;
   </script>
 </body>
